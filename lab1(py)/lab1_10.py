@@ -3,7 +3,7 @@
 
 
 password = input("Введите пароль: ")
-if len(password)>8 and not password.isdigit() and password.startswith('!'):
-	print("Плохой пароль!")
-else:
+if len(password)>8 and not password.isdigit():
 	print("Пароль надёжный")
+else:
+	print("Плохой пароль!")

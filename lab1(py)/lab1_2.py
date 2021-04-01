@@ -3,5 +3,12 @@
 # последовательность, иначе – «False».
 
 
-mas = [i for i in input('Введите последовательность чисел: ').split(' ')]
-print(True) if [i for i in range(len(mas) - 1) if mas[i] <= mas[i + 1]] else print(False)
+
+mas = [89, 3, 4, 5]
+i = 0
+if (i for i in range(len(mas) - 1)):
+	if mas[i] <= mas[i + 1]:
+		print(True) 
+	elif mas[i] >= mas[i + 1]:
+		import sys
+		sys.exit()
